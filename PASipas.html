@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog IPAS | Usaha, Energi, dan Daya</title>
+    <link rel="stylesheet" href="PASipas.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blog IPAS</h1>
+        <p>Materi: Usaha, Energi, dan Daya</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#usaha">Usaha</a></li>
+            <li><a href="#energi">Energi</a></li>
+            <li><a href="#daya">Daya</a></li>
+        </ul>
+    </nav>
+
+    <section id="usaha" class="content">
+        <h2>Usaha</h2>
+
+        <img src="https://i.ibb.co/Jmq6pDK/usaha.png" class="img-ilustrasi" alt="Ilustrasi Usaha">
+
+        <p>Usaha adalah hasil kali antara gaya dan perpindahan. Rumus:</p>
+        <div class="rumus">W = F × s</div>
+        <p>
+            Keterangan: <br>
+            W = usaha (Joule) <br>
+            F = gaya (Newton) <br>
+            s = perpindahan (meter)
+        </p>
+    </section>
+
+    <section id="energi" class="content">
+        <h2>Energi</h2>
+
+        <img src="https://i.ibb.co/LSyjwBH/energi.png" class="img-ilustrasi" alt="Ilustrasi Energi">
+
+        <p>Energi adalah kemampuan untuk melakukan usaha. Contoh: energi potensial, energi kinetik.</p>
+
+        <h3>Energi Potensial</h3>
+        <div class="rumus">Ep = m × g × h</div>
+
+        <h3>Energi Kinetik</h3>
+        <div class="rumus">Ek = ½ × m × v²</div>
+    </section>
+
+    <section id="daya" class="content">
+        <h2>Daya</h2>
+
+        <img src="https://i.ibb.co/hyhCDDy/daya.png" class="img-ilustrasi" alt="Ilustrasi Daya">
+
+        <p>Daya adalah besar usaha per satuan waktu.</p>
+        <div class="rumus">P = W / t</div>
+    </section>
+
+    <!-- Tombol Back to Top -->
+    <button id="backToTop" title="Kembali ke Atas">↑</button>
+
+    <footer>
+        <p>© 2025 Blog IPAS – Usaha, Energi, dan Daya</p>
+    </footer>
+
+    <script>
+        // Tampilkan tombol ketika scroll ke bawah
+        const backToTopBtn = document.getElementById("backToTop");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Aksi tombol kembali ke atas
+        backToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
+</body>
+</html>
